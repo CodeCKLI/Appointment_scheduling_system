@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="li.controller.ModAppointment">
+    <Label alignment="CENTER" layoutY="34.0" prefHeight="17.0" prefWidth="800.0" text="Modify Appointment" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="36.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="101.0" prefHeight="21.0" prefWidth="254.0" text="Appointment ID" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="131.0" prefHeight="21.0" prefWidth="254.0" text="Title" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="173.0" prefHeight="21.0" prefWidth="254.0" text="Description" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="219.0" prefHeight="21.0" prefWidth="254.0" text="Location" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="250.0" prefHeight="21.0" prefWidth="254.0" text="Contact" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="283.0" prefHeight="21.0" prefWidth="254.0" text="Type" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="320.0" prefHeight="21.0" prefWidth="254.0" text="Start Date" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="359.0" prefHeight="21.0" prefWidth="254.0" text="End Date" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutY="398.0" prefHeight="21.0" prefWidth="254.0" text="Customer ID" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="modAppIDField" disable="true" layoutX="291.0" layoutY="99.0" />
+    <TextField fx:id="modAppTitleField" layoutX="291.0" layoutY="129.0" prefHeight="25.0" prefWidth="337.0" />
+    <TextArea fx:id="modAppDescriptionField" layoutX="291.0" layoutY="162.0" prefHeight="46.0" prefWidth="337.0" />
+    <ComboBox fx:id="modAppContactField" layoutX="291.0" layoutY="248.0" prefHeight="25.0" prefWidth="272.0" promptText="Contact Persons" />
+    <DatePicker fx:id="modAppStartField" layoutX="291.0" layoutY="318.0" prefHeight="25.0" prefWidth="150.0" />
+    <DatePicker fx:id="modAppEndField" layoutX="291.0" layoutY="357.0" prefHeight="25.0" prefWidth="150.0" />
+    <Button fx:id="modAPPSaveBTN" layoutX="244.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#onModAPPSaveBTNClicked" prefHeight="25.0" prefWidth="142.0" text="Save" />
+    <Button fx:id="modAPPCancelBTN" layoutX="434.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#onModAPPCancelBTNClicked" prefHeight="25.0" prefWidth="142.0" text="Cancel" />
+    <TextField fx:id="modAppStartHour" layoutX="470.0" layoutY="320.0" prefHeight="25.0" prefWidth="43.0" promptText="Hour" />
+    <TextField fx:id="modAppStartMin" layoutX="521.0" layoutY="320.0" prefHeight="25.0" prefWidth="43.0" promptText="Min" />
+    <TextField fx:id="modAppEndHour" layoutX="470.0" layoutY="359.0" prefHeight="25.0" prefWidth="43.0" promptText="Hour" />
+    <TextField fx:id="modAppEndMin" layoutX="521.0" layoutY="359.0" prefHeight="25.0" prefWidth="43.0" promptText="Min" />
+   <TextField fx:id="modAppCustomerIDField" layoutX="291.0" layoutY="396.0" />
+   <Label alignment="CENTER_RIGHT" layoutX="470.0" layoutY="398.0" prefHeight="21.0" prefWidth="66.0" text="User ID" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="modAppUserIDField" layoutX="554.0" layoutY="396.0" />
+   <ComboBox fx:id="modAppLocationField" layoutX="291.0" layoutY="217.0" prefHeight="25.0" prefWidth="272.0" promptText="Office Locations" />
+   <ComboBox fx:id="modAppTypeField" layoutX="291.0" layoutY="281.0" prefHeight="25.0" prefWidth="272.0" promptText="Types" />
+   <Label fx:id="modAppMsgBoxLabel" alignment="CENTER" layoutY="14.0" prefHeight="21.0" prefWidth="800.0" text="Message" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

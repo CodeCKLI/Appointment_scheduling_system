@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="li.controller.AddAppointment">
+    <Label alignment="CENTER" layoutY="34.0" prefHeight="17.0" prefWidth="800.0" text="Add Appointment" textFill="WHITE">
+        <font>
+            <Font name="Verdana Bold" size="36.0" />
+        </font>
+    </Label>
+   <Label alignment="CENTER_RIGHT" layoutY="89.0" prefHeight="21.0" prefWidth="289.0" text="Title" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER_RIGHT" layoutY="131.0" prefHeight="21.0" prefWidth="289.0" text="Description" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER_RIGHT" layoutY="177.0" prefHeight="21.0" prefWidth="289.0" text="Location" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER_RIGHT" layoutY="208.0" prefHeight="21.0" prefWidth="289.0" text="Contact" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER_RIGHT" layoutY="241.0" prefHeight="21.0" prefWidth="289.0" text="Type" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER_RIGHT" layoutY="278.0" prefHeight="21.0" prefWidth="289.0" text="Start Date" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER_RIGHT" layoutY="317.0" prefHeight="21.0" prefWidth="289.0" text="End Date" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER_RIGHT" layoutY="356.0" prefHeight="21.0" prefWidth="289.0" text="Customer ID" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="addAppTitleField" layoutX="333.0" layoutY="87.0" prefHeight="25.0" prefWidth="362.0" />
+   <TextArea fx:id="addAppDescriptionField" layoutX="333.0" layoutY="116.0" prefHeight="52.0" prefWidth="362.0" />
+   <ComboBox fx:id="addAppContactField" layoutX="333.0" layoutY="206.0" prefHeight="25.0" prefWidth="174.0" promptText="Contact Person" />
+   <DatePicker fx:id="addAppStartDateField" layoutX="332.0" layoutY="276.0" />
+   <DatePicker fx:id="addAppEndDateField" layoutX="332.0" layoutY="315.0" />
+   <Button fx:id="addAPPSaveBTN" layoutX="258.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#onAddAPPSaveBTNClicked" prefHeight="25.0" prefWidth="142.0" text="Save" />
+   <Button fx:id="addAPPCancelBTN" layoutX="456.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#onAddAPPCancelBTNClicked" prefHeight="25.0" prefWidth="142.0" text="Cancel" />
+   <TextField fx:id="addAppStartHourField" layoutX="544.0" layoutY="276.0" prefHeight="25.0" prefWidth="43.0" promptText="Hour" />
+   <TextField fx:id="addAppStartMinField" layoutX="595.0" layoutY="276.0" prefHeight="25.0" prefWidth="43.0" promptText="Min" />
+   <TextField fx:id="addAppEndHourField" layoutX="544.0" layoutY="315.0" prefHeight="25.0" prefWidth="43.0" promptText="Hour" />
+   <TextField fx:id="addAppEndMinField" layoutX="595.0" layoutY="315.0" prefHeight="25.0" prefWidth="43.0" promptText="Min" />
+   <TextField fx:id="addAppCustomerField" layoutX="332.0" layoutY="354.0" prefHeight="25.0" prefWidth="174.0" />
+   <Label alignment="CENTER_RIGHT" layoutY="396.0" prefHeight="17.0" prefWidth="289.0" text="User ID" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="addAPPUserIDField" layoutX="331.0" layoutY="393.0" prefHeight="25.0" prefWidth="174.0" />
+   <ComboBox fx:id="addAppLocationField" layoutX="333.0" layoutY="175.0" prefHeight="25.0" prefWidth="174.0" promptText="Office Locations" />
+   <ComboBox fx:id="addAppTypeField" layoutX="333.0" layoutY="239.0" prefHeight="25.0" prefWidth="174.0" promptText="Types" />
+   <Label fx:id="addAppMsgBoxLabel" alignment="CENTER" layoutX="-6.0" layoutY="14.0" prefHeight="18.0" prefWidth="807.0" textFill="WHITE">
+      <font>
+         <Font name="Verdana Bold" size="14.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

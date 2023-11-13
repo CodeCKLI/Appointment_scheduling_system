@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="li.controller.LoginController">
+   <children>
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="133.0" layoutY="107.0" prefHeight="72.0" prefWidth="508.0" style="-fx-padding: 20; -fx-border-color: black; -fx-border-radius: 15;" text="Appointment Scheduling System" textAlignment="CENTER" textFill="#f9f9f9" wrapText="true">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uNameTextField" layoutX="400.0" layoutY="214.0" prefHeight="25.0" prefWidth="177.0" />
+      <Label fx:id="uNameLabel" alignment="CENTER_RIGHT" layoutX="171.0" layoutY="215.0" prefHeight="23.0" prefWidth="213.0" text="User Name" textFill="#f9f9f9">
+         <font>
+            <Font name="Verdana Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pwdLabel" alignment="CENTER_RIGHT" layoutX="164.0" layoutY="263.0" prefHeight="23.0" prefWidth="213.0" text="Password" textFill="#f9f9f9">
+         <font>
+            <Font name="Verdana Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeZoneLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="28.0" layoutY="408.0" prefHeight="23.0" prefWidth="197.0" text="Time Zone:" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeZoneID" contentDisplay="CENTER" layoutX="242.0" layoutY="406.0" text="ZoneID" textFill="#f6ff00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBTN" layoutX="250.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#onLoginBTNClicked" prefHeight="25.0" prefWidth="123.0" text="Login" />
+      <Button fx:id="ExitBTN" layoutX="436.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#onExitBTNClicked" prefHeight="25.0" prefWidth="123.0" text="Exit" />
+      <Label fx:id="msgBox" alignment="CENTER" layoutX="382.0" layoutY="408.0" prefHeight="17.0" prefWidth="355.0" text="Welcome!" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwdPasswordField" layoutX="401.0" layoutY="262.0" prefHeight="25.0" prefWidth="177.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="li.controller.ModCustomer">
+    <children>
+        <Label alignment="CENTER" layoutY="60.0" prefHeight="17.0" prefWidth="800.0" text="Modify Customer" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="174.0" layoutY="152.0" text="Customer ID" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="174.0" layoutY="190.0" text="Name" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="174.0" layoutY="230.0" text="Address" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="173.0" layoutY="268.0" text="Postal Code" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="173.0" layoutY="309.0" text="Phone Number" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="173.0" layoutY="352.0" text="Country" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="modCustomerID" disable="true" layoutX="400.0" layoutY="150.0" />
+        <TextField fx:id="modCustomerName" layoutX="400.0" layoutY="188.0" />
+        <TextField fx:id="modCustomerAddress" layoutX="400.0" layoutY="226.0" />
+        <TextField fx:id="modCustomerPostal" layoutX="400.0" layoutY="266.0" />
+        <TextField fx:id="modCustomerPhone" layoutX="400.0" layoutY="307.0" />
+        <Label layoutX="173.0" layoutY="393.0" text="Division" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="modCustomerCountry" layoutX="400.0" layoutY="350.0" onAction="#onModCustomerCountryAction" prefHeight="25.0" prefWidth="231.0" />
+        <ComboBox fx:id="modCustomerDiv" layoutX="400.0" layoutY="391.0" onAction="#onModCustomerDivAction" prefHeight="25.0" prefWidth="231.0" />
+        <Button fx:id="modCusSaveBTN" layoutX="231.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#onModCusSaveBTNClicked" prefHeight="25.0" prefWidth="114.0" text="Save" />
+        <Button fx:id="modCusCancelBTN" layoutX="418.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#onModCusCancelBTNClicked" prefHeight="25.0" prefWidth="114.0" text="Cancel" />
+      <Label fx:id="modCustomerMsgLabel" alignment="CENTER" layoutX="1.0" layoutY="28.0" prefHeight="20.0" prefWidth="800.0" text="Message Box" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
